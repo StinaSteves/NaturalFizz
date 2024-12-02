@@ -1,0 +1,46 @@
+
+nav {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    align-items: center; /* Vertikale Ausrichtung */
+    padding: 10px;
+    width: 100vw;
+    height: 10vh;
+  }
+  
+  /* Logo-Styling */
+  .logo {
+    flex-shrink: 0; /* Verhindert, dass das Logo kleiner wird */
+    height: 8vh; /* Setzt die Höhe des Logos auf 8% der Höhe des Viewports */
+    width: auto; /
+  }
+  
+  
+  /* Liste für Navigationslinks */
+  ul {
+    display: flex; /* Stellt die Links horizontal dar */
+    list-style: none;
+    margin-left: 20px; /* Abstand zwischen Logo und Links */
+    padding: 0;
+  }
+  
+  ul li {
+    margin-left: 20px; /* Abstand zwischen den Links */
+    font-weight: bold;
+  }
+  
+  ul li:first-child {
+    margin-left: 0; /* Verhindert den Abstand vor dem ersten Link */
+  }
+  
+  ul li a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #ffffff; /* Farbe der Links */
+  }
+  
+  ul li a:hover {
+    color: #ff0000; /* Hover-Effekt für Links */
+  }
+  

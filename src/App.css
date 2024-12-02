@@ -1,0 +1,41 @@
+/* - - - - - - - - - - General Design - - - - - - - - - - */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  height: 100vh; /* Die volle Höhe des Viewports */
+}
+
+/* Zentriertes Layout */
+.container {
+  text-align: center; /* Text und Inhalte zentrieren */
+  max-width: 800px;
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+
+
+
+/* - - - - - - - - - - Responsives Design - - - - - - - - - - */
+
+/* - - - - - Mobile - - - - - */
+@media (max-width: 768px) {
+}
+
+/* - - - - - Tablets - - - - - */
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* - - - - - Desktops - - - - - */
+@media (min-width: 1024px) {
+}
