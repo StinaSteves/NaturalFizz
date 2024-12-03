@@ -133,7 +133,7 @@ const Home = () => {
             </div>
 
             <div className="SectionImageFruitContainer">
-              <img
+              <img id="flavorBanner"
                 src={mapFlavors[currentIndex].fruit}
                 alt="Flavor fruit"
                 className={`fade-in ${isAnimating ? "fade-out" : ""}`}
@@ -141,7 +141,7 @@ const Home = () => {
             </div>
 
             <div className="SectionImageContainer">
-              <img
+              <img 
                 src={mapFlavors[currentIndex].fruitCan}
                 alt="Flavor can"
               />

@@ -57,9 +57,15 @@ p {
     position: relative;
 }
 
+#flavorBanner{
+    height: 100vh;
+ 
+}
+
 .SectionImageFruitContainer {
     z-index: 0;
     position: absolute;
+
 }
 
 .SectionImageContainer img {
