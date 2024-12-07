@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback } from "react";
 import "../App.css";
 import "../styles/Home.css";
 
@@ -18,17 +18,17 @@ const mapFlavors = [
     ],
   },
   {
-    name: "Peach",
-    fruitCan: "/peachCan.png",
-    fruit: "/peach.png",
-    backgroundColor: "#f9af3c",
+    name: "Apple",
+    fruitCan: "/appleCan.png",
+    fruit: "/apple.png",
+    backgroundColor: "#ea3f48",
     flavorDescription:
-      "The organic peach soda is sweet and juicy, with a smooth, mellow flavor of ripe peaches.",
+      "The organic apple soda is crisp and refreshing, with a burst of sweet, juicy apples.",
     ingredients: [
-      "Peach ipsum dolor sit amet",
+      "Blueberry ipsum dolor sit amet",
       "Sed do eiusmod tempor incididunt",
-      "Ut labore et dolore magna aliqua",
-      "Lorem ipsum dolor sit amet.",
+      "Adipiscing elit, sed do eiusmod tempor",
+      "Ut labore et dolore magna aliqua.",
     ],
   },
   {
@@ -46,24 +46,24 @@ const mapFlavors = [
     ],
   },
   {
-    name: "Apple",
-    fruitCan: "/appleCan.png",
-    fruit: "/apple.png",
-    backgroundColor: "#ea3f48",
+    name: "Peach",
+    fruitCan: "/peachCan.png",
+    fruit: "/peach.png",
+    backgroundColor: "#f9af3c",
     flavorDescription:
-      "The organic apple soda is crisp and refreshing, with a burst of sweet, juicy apples.",
+      "The organic peach soda is sweet and juicy, with a smooth, mellow flavor of ripe peaches.",
     ingredients: [
-      "Blueberry ipsum dolor sit amet",
+      "Peach ipsum dolor sit amet",
       "Sed do eiusmod tempor incididunt",
-      "Adipiscing elit, sed do eiusmod tempor",
-      "Ut labore et dolore magna aliqua.",
+      "Ut labore et dolore magna aliqua",
+      "Lorem ipsum dolor sit amet.",
     ],
   },
   {
     name: "Unlocking the Power",
-    fruitCan: "/lemonCan.png",
+    fruitCan: "/peachCan.png",
     fruit: "/waterDrops.png",
-    backgroundColor: "#f4d453",
+    backgroundColor: "#f9af3c",
     flavorDescription:
       "a refreshing lemonade crafted with natural ingredients to quench your thirst. This fizzy blend combines fruity flavors with a hint of sweetness for a revitalizing taste experience. Enjoy the unique flavor and pure refreshment in every sparkling sip of NaturalFizz.",
     ingredients: [
@@ -79,7 +79,7 @@ const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentSection, setCurrentSection] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
-  const isLastIndex = currentIndex === mapFlavors.length - 1;
+  // const isLastIndex = currentIndex === mapFlavors.length - 1;
   const [direction, setDirection] = useState(null);
 
   const handleScroll = useCallback((e) => {
